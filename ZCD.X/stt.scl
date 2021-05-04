@@ -1,0 +1,13 @@
+configuration for "pic16f876" is
+end configuration;
+
+testbench for "pic16f876" is
+begin
+process is
+   begin
+      RA0<= '0';     // clock low
+      wait for 100 us;
+      RA0 <= '1';     // clock high
+      wait for 100 us;
+   end process;
+end testbench;
